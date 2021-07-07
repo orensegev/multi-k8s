@@ -12,5 +12,5 @@ docker push orensegev/multi-worker:$SHA
 
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=orensegev/multi-server:$SHA
-kubectl set image deployments/client-deployment server=orensegev/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=orensegev/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=orensegev/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=orensegev/multi-worker:$SHA

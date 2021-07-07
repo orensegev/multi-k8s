@@ -13,7 +13,7 @@ spec:
         component: server
     spec:
       containers:
-        - name: server-deployment
+        - name: server
           image: orensegev/multi-server
           ports:
             - containerPort: 5000
